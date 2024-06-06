@@ -1,7 +1,8 @@
-import { electricity, gear, miles } from "@/public";
+import { electricity, gear, line, miles } from "@/public";
 import { Calendar } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+import { Button } from "../ui/button";
 
 type Props = {
   items: {
@@ -12,11 +13,16 @@ type Props = {
     type: string;
     miles: string;
   };
+  isSecond?: boolean;
 };
 
-const CarCards = ({ items }: Props) => {
+const CarCards = ({ items, isSecond }: Props) => {
   return (
-    <div className="w-[373px] h-[310px] flex flex-col bg-white rounded-lg">
+    <div
+      className={`w-[373px] ${
+        isSecond ? "h-[370px]" : "h-[310px]"
+      } flex flex-col bg-white rounded-lg`}
+    >
       <div>
         <Image
           src={items.image}
@@ -66,6 +72,23 @@ const CarCards = ({ items }: Props) => {
           <p className="text-[#7b7b7b] text-xs">{items.miles}</p>
         </span>
       </div>
+      {isSecond && (
+        <div className="mx-[16px]">
+          <Image
+            src={line}
+            alt="line"
+            width={394}
+            height={2}
+            className="mt-4"
+          />
+          <span className="flex justify-between mt-1">
+            <Button className="bg-white text-black border border-[#8DB429]">
+              Details
+            </Button>
+            <Button className="bg-[#8DB429] px-6">Buy</Button>
+          </span>
+        </div>
+      )}
     </div>
   );
 };
