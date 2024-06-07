@@ -119,8 +119,9 @@ export default function Home() {
                 Our partners
               </h3>
               <p className="font-medium leading-[25px] text-lg mx-2">
-                We provide coverage from the region's best insurance providers.
-                representing a multitude of insurance companies, including:
+                We provide coverage from the region&apos;s best insurance
+                providers. representing a multitude of insurance companies,
+                including:
               </p>
             </div>
             <div className="flex justify-center items-center gap-4 mt-8 flex-wrap">
