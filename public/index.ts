@@ -1,4 +1,4 @@
-import logo from "./icons/logo.svg";
+import logo from "./images/logo.svg";
 import hero from "./images/hero image.avif";
 import line from "./icons/Line.svg";
 import tesla1 from "./images/tesla-1.avif";
@@ -11,10 +11,13 @@ import miles from "./icons/miles.svg";
 import hero2 from "./images/hero2.svg";
 import hero3 from "./images/hero3.avif";
 import hero4 from "./images/hero4.avif";
+import hero5 from "./images/hero5.svg";
 import tesla from "./images/tesla.svg";
 import ford from "./images/ford.svg";
 import eq from "./images/eq.svg";
 import bmw from "./images/bmw.svg";
+import footer from "./images/footer-img.avif";
+import ham from "./icons/hamburger.svg";
 export {
   logo,
   hero,
@@ -33,4 +36,7 @@ export {
   ford,
   eq,
   bmw,
+  hero5,
+  footer,
+  ham,
 };
