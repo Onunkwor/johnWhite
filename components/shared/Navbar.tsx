@@ -9,6 +9,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -18,9 +19,9 @@ const Navbar = () => {
       </div>
 
       <div className="gap-10 text-white hidden lg:flex">
-        <p>Home</p>
-        <p>Produce</p>
-        <p>About Us</p>
+        <Link href="/">Home</Link>
+        <Link href="/product">Product</Link>
+        <Link href="/about">About Us</Link>
       </div>
       <Button size="lg" className="bg-[#9DC23E] hidden lg:flex">
         Contact Us
@@ -34,9 +35,9 @@ const Navbar = () => {
           <SheetContent>
             <SheetHeader>
               <div className="flex gap-10 text-black flex-col mt-4">
-                <p>Home</p>
-                <p>Produce</p>
-                <p>About Us</p>
+                <Link href="/">Home</Link>
+                <Link href="/product">Product</Link>
+                <Link href="/about">About Us</Link>
               </div>
               <Button size="lg" className="bg-[#9DC23E]">
                 Contact Us

@@ -18,6 +18,8 @@ import eq from "./images/eq.svg";
 import bmw from "./images/bmw.svg";
 import footer from "./images/footer-img.avif";
 import ham from "./icons/hamburger.svg";
+import car from "./images/car.png";
+import colCar from "./images/colCar.png";
 export {
   logo,
   hero,
@@ -39,4 +41,6 @@ export {
   hero5,
   footer,
   ham,
+  car,
+  colCar,
 };
