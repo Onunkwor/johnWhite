@@ -82,7 +82,7 @@ const Home = () => {
 
         <div className="flex flex-wrap gap-5 mt-8">
           {cardDetails.map((card, index) => (
-            <Link href="/details">
+            <Link href="/details" key={index}>
               <CarCards key={index} items={card} />
             </Link>
           ))}
@@ -159,7 +159,7 @@ const Home = () => {
 
         <div className="flex flex-wrap gap-5 mt-[61px] ">
           {cardDetails.map((card, index) => (
-            <Link href="/details">
+            <Link href="/details" key={index}>
               <CarCards key={index} items={card} isSecond={true} />
             </Link>
           ))}

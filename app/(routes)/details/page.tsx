@@ -35,7 +35,7 @@ const Page = () => {
 
         <div className="flex flex-wrap gap-10 mt-[60px]">
           {cardDetails.map((card, index) => (
-            <Link href="/details">
+            <Link href="/details" key={index}>
               <CarCards key={index} items={card} isSecond={true} />
             </Link>
           ))}
